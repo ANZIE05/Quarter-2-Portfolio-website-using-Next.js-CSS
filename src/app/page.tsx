@@ -1,95 +1,36 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import pp from "/public/pp.jpg";
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      
+    
+       <div className="home">
+        <div className="home-image">
+          <Image src={pp} alt="profile picture" width={360} height= {350}/> </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <div className="home-content">
+          <h1>Hi, I'm Qurat Ul Ain Ismail</h1>
+          <h3>Frontend Developer</h3>
+          <h3>Graphic Designer</h3>
+          <h3>Digital Marketer</h3>
+          <h3>MS Office</h3>
+          <p>Certified Graphic Designer and Digital Marketer with expertise in MS Office, I bring a creative edge to every project. Currently enhancing my front-end development skills, I'm passionate about crafting visually compelling and user-friendly designs. Click "Read More" to learn about my journey, skills, and commitment to impactful work.</p>
+
+          <div className="home-sci">
+            
+            <a href="https://www.linkedin.com/in/qurat-ul-ain1005" target="_blank" rel="noopener noreferrer"><i className='bx bxl-linkedin-square'></i></a>
+            
+            <a href="https://github.com/ANZIE05" target="_blank" rel="noopener noreferrer"><i className='bx bxl-github'></i></a>
+          </div>
+
+          <a href="/about" className="btn">Read More</a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+             
     </div>
+
   );
 }
